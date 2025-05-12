@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJIT Geeks Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/api/placeholder/80/80" alt="RJIT Geeks Club Logo">
+                <h1>RJIT Geeks Club</h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" id="close-menu"></i>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#hierarchy">Hierarchy</a></li>
+                    <li><a href="#members">Members</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#alumni">Alumni</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" id="menu-btn"></i>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to <span>RJIT Geeks Club</span></h1>
+            <p>Fostering Innovation, Creating Future Developers</p>
+            <div class="hero-btns">
+                <a href="#about" class="btn primary-btn">Learn More</a>
+                <a href="#contact" class="btn secondary-btn">Join Us</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/api/placeholder/450/300" alt="Coding Club Image">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-title">
+            <h2>About Our Club</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="/api/placeholder/400/300" alt="About Club">
+            </div>
+            <div class="about-text">
+                <h3>Who We Are</h3>
+                <p>RJIT Geeks Club is a vibrant community of passionate coders and tech enthusiasts at RJIT. We aim to foster a culture of innovation, learning, and collaboration among students interested in programming and technology.</p>
+                
+                <h3>Our Mission</h3>
+                <p>To create a supportive environment where students can develop their coding skills, share knowledge, participate in competitions, and prepare for successful careers in the tech industry.</p>
+                
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <i class="fas fa-users"></i>
+                        <h4>120+</h4>
+                        <p>Active Members</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-trophy"></i>
+                        <h4>25+</h4>
+                        <p>Competitions Won</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>50+</h4>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h4>30+</h4>
+                        <p>Annual Events</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hierarchy Section -->
+    <section id="hierarchy" class="hierarchy">
+        <div class="section-title">
+            <h2>Club Hierarchy</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="hierarchy-content">
+            <div class="hierarchy-card">
+                <div class="hierarchy-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3>4th Year</h3>
+                <p>Club Regulators & Mentors</p>
+                <ul>
+                    <li>Overall club administration</li>
+                    <li>Strategic planning & guidance</li>
+                    <li>Industry connections</li>
+                    <li>Alumni network management</li>
+                </ul>
+            </div>
+            <div class="hierarchy-card">
+                <div class="hierarchy-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>3rd Year</h3>
+                <p>Contest Participants</p>
+                <ul>
+                    <li>Competitive coding</li>
+                    <li>Hackathon participation</li>
+                    <li>Project leadership</li>
+                    <li>Technical workshops</li>
+                </ul>
+            </div>
+            <div class="hierarchy-card">
+                <div class="hierarchy-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>2nd Year</h3>
+                <p>Mentors & Trainers</p>
+                <ul>
+                    <li>Teaching fundamentals</li>
+                    <li>Peer mentoring</li>
+                    <li>Organizing coding sessions</li>
+                    <li>Event coordination</li>
+                </ul>
+            </div>
+            <div class="hierarchy-card">
+                <div class="hierarchy-icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <h3>1st Year</h3>
+                <p>Future Developers</p>
+                <ul>
+                    <li>Learning fundamentals</li>
+                    <li>Developing coding skills</li>
+                    <li>Participating in workshops</li>
+                    <li>Collaborative projects</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Members Section -->
+    <section id="members" class="members">
+        <div class="section-title">
+            <h2>Our Team</h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="4th">4th Year</button>
+            <button class="filter-btn" data-filter="3rd">3rd Year</button>
+            <button class="filter-btn" data-filter="2nd">2nd Year</button>
+            <button class="filter-btn" data-filter="1st">1st Year</button>
+        </div>
+        
+        <div class="members-grid">
+            <!-- 4th Year Members -->
+            <div class="member-card" data-category="4th">
+                <div class="member-img">
+                    <img src="/api/placeholder/200/200" alt="Club President">
+                </div>
+                <h3>Aryan Sharma</h3>
+                <p class="position">Club President</p>
+                <p class="year">4th Year</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="member-card" data-category="4th">
+                <div class="member-img">
+                    <img src="/api/placeholder/200/200" alt="Vice President">
+                </div>
+                <h3>Priya Patel</h3>
+                <p class="position">Vice President</p>
+                <p class="year">4th Year</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <!-- 3rd Year Members -->
+            <div class="member-card" data-category="3rd">
+                <div class="member-img">
+                    <img src="/api/placeholder/200/200" alt="Technical Lead">
+                </div>
+                <h3>Rahul Verma</h3>
+                <p class="position">Technical Lead</p>
+                <p class="year">3rd Year</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="member-card" data-category="3rd">
+                <div class="member-img">
+                    <img src="/api/placeholder/200/200" alt="Event Coordinator">
+                </div>
+                <h3>Neha Gupta</h3>
+                <p class="position">Event Coordinator</p>
+                <p class="year">3rd Year</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <!-- 2nd Year Members -->
+            <div class="member-card" data-category="2nd">
+                <div class="member-img">
+                    <img src="/api/placeholder/200/200" alt="Coding Mentor">
+                </div>
+                <h3>Vikram Singh</h3>
+                <p class="position">Coding Mentor</p>
+                <p class="year">2nd Year</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="member-card" data-category="2nd">
+                <div class="member-img">
+                    <img src="/api/placeholder/200/200" alt="Web Dev Lead">
+                </div>
+                <h3>Anjali Mishra</h3>
+                <p class="position">Web Dev Lead</p>
+                <p class="year">2nd Year</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <!-- 1st Year Members -->
+            <div class="member-card" data-category="1st">
+                <div class="member-img">
+                    <img src="/api/placeholder/200/200" alt="Member">
+                </div>
+                <h3>Rohan Kumar</h3>
+                <p class="position">Active Member</p>
+                <p class="year">1st Year</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="member-card" data-category="1st">
+                <div class="member-img">
+                    <img src="/api/placeholder/200/200" alt="Member">
+                </div>
+                <h3>Sneha Joshi</h3>
+                <p class="position">Active Member</p>
+                <p class="year">1st Year</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="section-title">
+            <h2>Our Achievements</h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="achievements-slider">
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>National Hackathon Winner</h3>
+                    <p>Our team won first place at the National College Hackathon 2024</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>ACM-ICPC Regionals</h3>
+                    <p>Two teams qualified for ACM-ICPC Regional Finals</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Google Solution Challenge</h3>
+                    <p>Top 10 in Google Solution Challenge 2024</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Best Coding Club</h3>
+                    <p>Recognized as Best Coding Club in the State Technical Fest</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Microsoft Imagine Cup</h3>
+                    <p>National finalists in Microsoft Imagine Cup 2024</p>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button id="prev-achievement"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-achievement"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alumni Section -->
+    <section id="alumni" class="alumni">
+        <div class="section-title">
+            <h2>Our Alumni</h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="alumni-grid">
+            <div class="alumni-card">
+                <div class="alumni-img">
+                    <img src="/api/placeholder/200/200" alt="Alumni">
+                </div>
+                <h3>Aman Khanna</h3>
+                <p class="company">Software Engineer @ Google</p>
+                <p class="batch">Batch of 2023</p>
+                <p class="quote">"RJIT Geeks Club shaped my problem-solving skills that helped me crack interviews at top tech companies."</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="alumni-card">
+                <div class="alumni-img">
+                    <img src="/api/placeholder/200/200" alt="Alumni">
+                </div>
+                <h3>Ritu Sharma</h3>
+                <p class="company">ML Engineer @ Microsoft</p>
+                <p class="batch">Batch of 2022</p>
+                <p class="quote">"The workshops and hackathons organized by the club gave me hands-on experience that was invaluable."</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="alumni-card">
+                <div class="alumni-img">
+                    <img src="/api/placeholder/200/200" alt="Alumni">
+                </div>
+                <h3>Varun Mehta</h3>
+                <p class="company">Full Stack Developer @ Amazon</p>
+                <p class="batch">Batch of 2021</p>
+                <p class="quote">"Being the club's technical lead taught me teamwork and leadership, which I use daily in my job."</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="alumni-card">
+                <div class="alumni-img">
+                    <img src="/api/placeholder/200/200" alt="Alumni">
+                </div>
+                <h3>Shreya Kapoor</h3>
+                <p class="company">SDE @ Netflix</p>
+                <p class="batch">Batch of 2020</p>
+                <p class="quote">"The competitive coding culture of our club prepared me for technical interviews and real-world challenges."</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="view-more-btn">
+            <a href="#" class="btn primary-btn">View More Alumni</a>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="section-title">
+            <h2>Upcoming Events</h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="events-container">
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">15</span>
+                    <span class="month">May</span>
+                </div>
+                <div class="event-details">
+                    <h3>Web Development Bootcamp</h3>
+                    <p class="event-time"><i class="far fa-clock"></i> 10:00 AM - 4:00 PM</p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Tech Lab 2, RJIT Campus</p>
+                    <p class="event-desc">Learn modern web development with React, Node.js and MongoDB stack.</p>
+                    <a href="#" class="event-link">Register Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">22</span>
+                    <span class="month">May</span>
+                </div>
+                <div class="event-details">
+                    <h3>Competitive Coding Contest</h3>
+                    <p class="event-time"><i class="far fa-clock"></i> 2:00 PM - 5:00 PM</p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Online (Codeforces)</p>
+                    <p class="event-desc">Test your coding skills in this time-bound algorithmic challenge.</p>
+                    <a href="#" class="event-link">Register Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">05</span>
+                    <span class="month">Jun</span>
+                </div>
+                <div class="event-details">
+                    <h3>Machine Learning Workshop</h3>
+                    <p class="event-time"><i class="far fa-clock"></i> 11:00 AM - 3:00 PM</p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Seminar Hall, RJIT Campus</p>
+                    <p class="event-desc">Introduction to ML concepts and hands-on with TensorFlow.</p>
+                    <a href="#" class="event-link">Register Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>RJIT Campus, Tech Building, Room 301</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>geeksclub@rjit.edu</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 9876543210</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with our latest events, workshops, and tech news.</p>
+            <form id="newsletterForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn primary-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/api/placeholder/80/80" alt="RJIT Geeks Club Logo">
+                <h2>RJIT Geeks Club</h2>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#members">Team</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-resources">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Learning Materials</a></li>
+                    <li><a href="#">Code Repository</a></li>
+                    <li><a href="#">Past Projects</a></li>
+                    <li><a href="#">Coding Practice</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 RJIT Geeks Club. All Rights Reserved.</p>
+            <p>Designed with <i class="fas fa-heart"></i> by RJIT Geeks</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <!-- This comment ensures the page loads properly -->
+</body>
+</html>
