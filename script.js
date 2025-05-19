@@ -839,6 +839,9 @@ document.addEventListener('DOMContentLoaded', function() {
             body.dark-theme .stat-box p{
                 color: black;
             }
+            body.dark-theme .section-title h2{
+                color:blue;
+            }
         `;
         
         const themeStyleEl = document.createElement('style');
