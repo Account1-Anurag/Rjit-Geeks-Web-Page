@@ -906,6 +906,8 @@ footer {
 .footer-logo img {
     width: 50px;
     margin-right: 10px;
+    border-radius: 50%;    
+    object-fit: cover; 
 }
 
 .footer-logo h2 {
